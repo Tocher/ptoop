@@ -66,7 +66,7 @@ public class Polyline extends Shape {
 
     public void draw(Graphics g){
         g.setColor(getBorderColor());
-        g.drawPolyline(getXs(), getYs(), getPointsCount());//Stream java 8
+        g.drawPolyline(getXs(), getYs(), getPointsCount());
     }
 
     public String getName() {
