@@ -16,6 +16,7 @@ import java.nio.file.Paths;
 public class Main extends JPanel {
 
     private static ShapesDrawer shapesDrawer = ShapesDrawer.getInstance();
+    private Path path = Paths.get("target/classes/plugins");
 
     private Main() {
 
@@ -76,9 +77,7 @@ public class Main extends JPanel {
         mainFrame.pack();
     }
 
-    private static void loadPlugins(JPanel panel) {
-        Path path = Paths.get("target/classes/plugins");
-
+    private void loadPlugins(JPanel panel) {
         String modulePath = path.toString();
 
         File dir = new File(modulePath);
